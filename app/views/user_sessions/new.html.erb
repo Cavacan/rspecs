@@ -1,0 +1,11 @@
+<% flash.each do |message_type, message| %>
+	<div class="flash-message <%= message_type %>"><%= message %></div>
+<% end %>
+
+<h1>Login</h1>
+
+<p><%= render 'shared/form', user: @user %></p>
+
+<br>
+<p><%= link_to 'TOP', root_path %></p>
+<p><%= link_to 'SignUp', new_user_path %></p>
